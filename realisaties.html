@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Realisaties — CVA Projects | Foto's &amp; video's van onze werken</title>
+<meta name="description" content="Bekijk realisaties van CVA Projects: foto's en video's van grondwerken, sloop- en afbraakwerk, asbestverwijdering en containerverhuur in Klein-Brabant.">
+<meta name="theme-color" content="#0c3a48">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://i.ytimg.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-row">
+    <a href="index.html#top" class="brand" aria-label="CVA Projects home">
+      <span class="brand-main">CVA<b>PROJECTS</b></span>
+      <span class="brand-sub">Sloopwerken &amp; Containers</span>
+    </a>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html#diensten">Diensten</a></li>
+        <li><a href="index.html#grondwerk">Grondwerk</a></li>
+        <li><a href="index.html#sloopwerk">Sloopwerk</a></li>
+        <li><a href="index.html#asbest">Asbest</a></li>
+        <li><a href="index.html#containers">Containers</a></li>
+        <li><a href="realisaties.html" class="active">Realisaties</a></li>
+        <li><a href="index.html#over">Over ons</a></li>
+      </ul>
+      <a class="call-btn" href="tel:+32468109478">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>0468 10 94 78</span>
+      </a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu openen" onclick="document.getElementById('mnav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="mnav" class="wrap">
+    <ul onclick="document.getElementById('mnav').classList.remove('open')">
+      <li><a href="index.html#diensten">Diensten</a></li>
+      <li><a href="index.html#grondwerk">Grondwerk &amp; grondverzet</a></li>
+      <li><a href="index.html#sloopwerk">Sloop- en afbraakwerk</a></li>
+      <li><a href="index.html#asbest">Asbest verwijderen</a></li>
+      <li><a href="index.html#containers">Container huren</a></li>
+      <li><a href="realisaties.html">Realisaties</a></li>
+      <li><a href="index.html#over">Over CVA Projects</a></li>
+      <li><a class="mnav-call" href="tel:+32468109478">Bel 0468 10 94 78</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Ons werk in beeld</span>
+      <h1>Realisaties</h1>
+      <p>Foto's en video's van onze grondwerken, sloop- en afbraakwerk, asbestverwijdering en containers. Zo ziet stevig werk eruit.</p>
+    </div>
+  </section>
+
+  <div class="subnav">
+    <div class="wrap">
+      <button class="seg active" data-target="fotos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></svg>
+        Foto's <span class="count" id="cntFotos"></span>
+      </button>
+      <button class="seg" data-target="videos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+        Video's <span class="count" id="cntVideos"></span>
+      </button>
+    </div>
+  </div>
+
+  <section class="gsec" id="sec-fotos">
+    <div class="wrap">
+      <div class="photo-grid" id="photoGrid"></div>
+    </div>
+  </section>
+
+  <section class="gsec" id="sec-videos" style="display:none">
+    <div class="wrap">
+      <div class="video-grid" id="videoGrid"></div>
+    </div>
+  </section>
+
+  <section class="cta-band" style="margin-top:40px">
+    <div class="wrap">
+      <h2>Ook zo'n resultaat?</h2>
+      <p>Vertel ons over uw project — we geven u snel prijs en timing.</p>
+      <div class="cta-actions">
+        <a class="btn btn-dark" href="tel:+32468109478">Bel 0468 10 94 78</a>
+        <a class="btn btn-outline-dark" href="mailto:info@cvaprojects.be">Mail info@cvaprojects.be</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="brand-main">CVA<b>PROJECTS</b></span>
+        <p>Sloopwerken &amp; Containers. Grondwerken, afbraak, asbestverwijdering en containerverhuur in Klein-Brabant.</p>
+      </div>
+      <div>
+        <h5>Diensten</h5>
+        <ul>
+          <li><a href="index.html#grondwerk">Grondwerk &amp; grondverzet</a></li>
+          <li><a href="index.html#sloopwerk">Sloop- en afbraakwerk</a></li>
+          <li><a href="index.html#asbest">Asbest verwijderen</a></li>
+          <li><a href="index.html#containers">Container huren</a></li>
+          <li><a href="realisaties.html">Realisaties</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+32468109478">0468 10 94 78</a></li>
+          <li><a href="mailto:info@cvaprojects.be">info@cvaprojects.be</a></li>
+          <li><a href="https://www.cvaprojects.be">www.cvaprojects.be</a></li>
+          <li>Klein-Brabant, België</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© CVA Projects — Sloopwerken &amp; Containers</span>
+      <span>Gent · Antwerpen · Brussel</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Foto vergroot">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Sluiten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Vorige foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+  <img id="lbImg" src="" alt="Realisatie CVA Projects">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Volgende foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+  <div class="lb-counter" id="lbCount"></div>
+</div>
+
+<script>
+  const VIDEOS = ['KUEE5pAUjZw','SpXSZUDToAU','d-MKzhfeu2k','pXiClmrUaMw','r-WsojlE6QE','wJUA2e15Shs','m7cMqEZFpBU','9a9dND8jvfA','qY2nw1yLmqE','z71wzlnvmcg'];
+  const PHOTO_COUNT = 106;
+
+  // ---- videos (click-to-load facade, keeps the page fast) ----
+  const vg = document.getElementById('videoGrid');
+  VIDEOS.forEach(id => {
+    const b = document.createElement('button');
+    b.className = 'vfacade';
+    b.setAttribute('aria-label', 'Video afspelen');
+    b.innerHTML = '<img loading="lazy" src="https://i.ytimg.com/vi/' + id + '/hqdefault.jpg" alt="CVA Projects video"><span class="play"><i></i></span>';
+    b.addEventListener('click', () => {
+      b.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0" title="CVA Projects video" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>';
+    });
+    vg.appendChild(b);
+  });
+  document.getElementById('cntVideos').textContent = VIDEOS.length;
+
+  // ---- photos (masonry + lightbox) ----
+  const pg = document.getElementById('photoGrid');
+  const photos = [];
+  for (let i = 1; i <= PHOTO_COUNT; i++) {
+    const src = 'fotos/photo-' + String(i).padStart(3, '0') + '.jpg';
+    photos.push(src);
+    const b = document.createElement('button');
+    b.setAttribute('aria-label', 'Foto ' + i + ' vergroten');
+    const idx = i - 1;
+    b.innerHTML = '<img loading="lazy" decoding="async" src="' + src + '" alt="Realisatie CVA Projects ' + i + '">';
+    b.addEventListener('click', () => openLB(idx));
+    pg.appendChild(b);
+  }
+  document.getElementById('cntFotos').textContent = PHOTO_COUNT;
+
+  // ---- lightbox ----
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbCount = document.getElementById('lbCount');
+  let cur = 0;
+  function show(){ lbImg.src = photos[cur]; lbCount.textContent = (cur + 1) + ' / ' + photos.length; }
+  function openLB(i){ cur = i; show(); lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeLB(){ lb.classList.remove('open'); document.body.style.overflow = ''; }
+  function nav(d){ cur = (cur + d + photos.length) % photos.length; show(); }
+  document.getElementById('lbClose').addEventListener('click', closeLB);
+  document.getElementById('lbPrev').addEventListener('click', () => nav(-1));
+  document.getElementById('lbNext').addEventListener('click', () => nav(1));
+  lb.addEventListener('click', e => { if (e.target === lb) closeLB(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLB();
+    else if (e.key === 'ArrowLeft') nav(-1);
+    else if (e.key === 'ArrowRight') nav(1);
+  });
+
+  // ---- segmented Foto's / Video's toggle ----
+  const segs = document.querySelectorAll('.seg');
+  segs.forEach(s => s.addEventListener('click', () => {
+    segs.forEach(x => x.classList.remove('active'));
+    s.classList.add('active');
+    const t = s.dataset.target;
+    document.getElementById('sec-fotos').style.display = (t === 'fotos') ? '' : 'none';
+    document.getElementById('sec-videos').style.display = (t === 'videos') ? '' : 'none';
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }));
+</script>
+
+</body>
+</html>
